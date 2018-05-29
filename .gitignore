@@ -6,3 +6,4 @@ spec/dummy_app/db/*.db
 
 .DS_Store
 *.sublime-workspace
+.idea
