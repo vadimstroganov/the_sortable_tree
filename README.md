@@ -205,6 +205,7 @@ Render helpers for HTML tree generation
 ```ruby
 bundle exec rails g the_sortable_tree:views tree
 bundle exec rails g the_sortable_tree:views sortable
+bundle exec rails g the_sortable_tree:views expandable_tree
 bundle exec rails g the_sortable_tree:views nested_options
 ```
 

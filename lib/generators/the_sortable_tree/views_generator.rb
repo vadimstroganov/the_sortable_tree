@@ -8,6 +8,7 @@ module TheSortableTree
 
 bundle exec rails g the_sortable_tree:views tree
 bundle exec rails g the_sortable_tree:views sortable
+bundle exec rails g the_sortable_tree:views expandable_tree
 bundle exec rails g the_sortable_tree:views nested_options
 
 bundle exec rails g the_sortable_tree:views helper
@@ -34,6 +35,9 @@ BANNER
         elsif param_name == 'sortable'
           puts "Copy of sortable tree render helper file"
           copy_file "../helpers/render_sortable_tree_helper.rb", "app/helpers/render_sortable_tree_helper.rb"
+        elsif param_name == 'expandable_tree'
+          puts "Copy of expandable tree render helper file"
+          copy_file "../helpers/render_expandable_tree_helper.rb", "app/helpers/render_expandable_tree_helper.rb"
         elsif param_name == 'nested_options'
           puts "Copy of nested options tree render helper file"
           copy_file "../helpers/render_nested_options_helper.rb", "app/helpers/render_nested_options_helper.rb"
